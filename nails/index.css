@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, serif;
+}
+
+h2{
+    font-size: 46px;
+}
+
+span{
+    font-size: 24px;
+}
+
+.header{
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preview{
+    height: 100vh;
+    width: 100%;
+    background: url(https://cdn.pixabay.com/photo/2016/11/23/18/08/black-background-1854126_1280.jpg) no-repeat center #ffffff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wrapper{
+    margin: 0 20px;
+}
+
+.preview__blackout{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+
+.preview__description{
+    color: #fff;
+    padding-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.preview__description h2{
+    font-size: 8vw;
+    min-font-size: 48px;
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+ }
+
+.preview__description span{
+    text-align: center;
+    max-width: 500px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header li{
+    cursor: pointer;
+    list-style: none;
+    margin-right: 30px;
+    border-bottom: 4px solid rgba(0,0,0,0);
+    transition: border-bottom-color .2s ease;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+li:hover{
+    border-bottom: 4px solid white;
+}
+
+.about{
+    overflow: hidden;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+}
+
+.about img{
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.about .wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__description span{
+    max-width: 800px;
+    text-align: center;
+}
+
+.about__description img{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.about__portfolio{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about__portfolio img{
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+
+.about__portfolio img:first-child{
+    align-self: flex-start;
+}
+.about__portfolio img:last-child{
+    align-self: flex-end;
+}
+
+.gallery{
+    overflow: hidden;
+    background-color: #efefef;
+    padding: 40px 0;
+}
+
+.gallery span a{
+    color: black;
+}
+
+.gallery h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #515151;
+}
+
+.gallery .gallery__wrapper{
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.gallery img{
+    height: 360px;
+    width: 360px;
+}
+
+.send-message__blackout{
+    padding: 40px 0;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.send-message{
+    background: #F5F5F5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.send-message h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.send-message form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-message textarea{
+    width: 70%;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 22px;
+    background-color: #fff;
+}
+
+.send-message input[type="submit"]{
+    font-size: 24px;
+    color:#fff;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+
+.footer{
+    padding: 20px 0;
+    background-color: #212020;
+}
+
+.footer img{
+    height: 50px;
+}
+
+.footer .content{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .wrapper{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}

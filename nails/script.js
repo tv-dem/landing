@@ -4,19 +4,25 @@ const chat='-547999288'
 document.querySelector('#form').addEventListener('submit', (e) => {
   e.preventDefault()
   const textarea = document.querySelector('textarea')
+  const contacts = document.querySelector('#contacts');
   const message = textarea.value;
-  if(!message){
-    alert('the message is clear!');
+  const contactsMessage = contacts.value;
+  if(!contactsMessage){
+    alert('оставьте ваши контакты!');
     return;
   }
   textarea.value = '';
-  const txt = 'message from site: ' + message;
+  contacts.value='';
+  const txt = `kонтактная информация: ${message}   дополнительная информация: ${contactsMessage ? contactsMessage : 'нет'}`;
   fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat}&parse_mode=html&text=${txt}`)
     .then(res =>{
-      alert('the message was recived')
+      if(res.ok)
+        alert('сообщение отправлено!')
+      else
+        throw new Error()
   })
     .catch((e) => {
-      alert('something was wrong(')
+      alert('сообщение не отправилось')
     })
 })
 

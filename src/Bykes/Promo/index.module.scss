@@ -1,0 +1,17 @@
+.promo{
+  flex: 1 0 100%;
+  position: relative;
+
+
+  .bg{
+    position: absolute;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../images/bg.png");
+    background-size: cover;
+  }
+}
